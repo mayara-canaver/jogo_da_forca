@@ -15,14 +15,14 @@ def menu():
     print("2 - Intruções")
     print("3 - Sair\n")
     x = int(input("Escolha uma opção:"))
+
     if x == 1:
         jogo.fase()
-    elif x == 2:
+    if x == 2:
         instrucao()
-    elif x == 3:
+    if x == 3:
         sys.exit()
-    else:
-        print(random.choice(textos.mensagem_erro))
-        return menu()
+    print(random.choice(textos.mensagem_erro))
+    return menu()
 
 menu()
